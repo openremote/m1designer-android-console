@@ -40,7 +40,7 @@ apply plugin: "com.android.application"
 dependencies {
     compile "org.openremote:or-shared:$orSharedVersion"
 
-    compile "com.android.support:support-v4:23.0.1"
+    compile "com.android.support:support-v4:23.1.0"
     compile "com.fasterxml.jackson.core:jackson-databind:2.4.1"
     compile "mikaelhg:urlbuilder:$urlbuilderVersion"
     compile "com.squareup.okhttp:okhttp:2.3.0"
@@ -75,6 +75,15 @@ android {
     packagingOptions {
         exclude "META-INF/LICENSE"
         exclude "META-INF/NOTICE"
+        // TODO What is wrong with you android clowns, seriously
+        /*
+        > Duplicate files copied in APK org/openremote/persistence/CreateScript.sql
+        File 1: /Users/cb/.gradle/caches/modules-2/files-2.1/org.openremote/or-shared/3.0-SNAPSHOT/d66b3248af9a17a90ec7336806c7da0d61808a75/or-shared-3.0-SNAPSHOT.jar
+        File 2: /Users/cb/.gradle/caches/modules-2/files-2.1/org.openremote/or-shared/3.0-SNAPSHOT/d66b3248af9a17a90ec7336806c7da0d61808a75/or-shared-3.0-SNAPSHOT.jar
+         */
+        exclude "org/openremote/persistence/CreateScript.sql"
+        exclude "org/openremote/persistence/DropScript.sql"
+        exclude "org/openremote/persistence/LoadScript.sql"
     }
 
     buildTypes {
