@@ -41,15 +41,15 @@ dependencies {
     compile "org.openremote:or-shared:$orSharedVersion"
 
     compile "com.android.support:support-v4:23.1.0"
-    compile "com.fasterxml.jackson.core:jackson-databind:2.4.1"
+    compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
     compile "mikaelhg:urlbuilder:$urlbuilderVersion"
-    compile "com.squareup.okhttp:okhttp:2.3.0"
-    compile "org.fourthline.cling:cling-core:2.1.0-SNAPSHOT"
-    compile "org.eclipse.jetty:jetty-server:8.1.8.v20121106"
-    compile "org.eclipse.jetty:jetty-servlet:8.1.8.v20121106"
-    compile "org.eclipse.jetty:jetty-client:8.1.8.v20121106"
-    compile "org.slf4j:slf4j-jdk14:1.7.12"
-    compile "org.apache.commons:commons-lang3:3.4"
+    compile "com.squareup.okhttp:okhttp:$okhttpVersion"
+    compile "org.fourthline.cling:cling-core:$clingVersion"
+    compile "org.eclipse.jetty:jetty-server:$jettyVersion"
+    compile "org.eclipse.jetty:jetty-servlet:$jettyVersion"
+    compile "org.eclipse.jetty:jetty-client:$jettyVersion"
+    compile "org.slf4j:slf4j-jdk14:$slf4jVersion"
+    compile "org.apache.commons:commons-lang3:$commonsLangVersion"
 }
 
 android {
