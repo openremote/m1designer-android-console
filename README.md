@@ -1,4 +1,6 @@
-# OpenRemote Android application
+# OpenRemote Milestone 1 Designer Prototype - Android Console
+
+To be removed when the prototype is removed.
 
 Development
 ---
